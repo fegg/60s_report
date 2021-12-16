@@ -1,0 +1,112 @@
+@plugin "px2rem";
+
+.page {
+  background-color: #f6f7f8;
+  margin: 0 auto;
+  position: relative;
+  max-width: 750px;
+  .wrapper {
+    // min-height: 100vh;
+    min-height: px2rem(1224px);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: px2rem(32px);
+    font-weight: 400;
+    color: #4a4a4a;
+    padding: px2rem(30px) px2rem(24px);
+    background: #f0f1f3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 750px;
+    &-placeholder {
+      height: px2rem(100px);
+    }
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    font-size: px2rem(28px);
+    height: px2rem(28px);
+    line-height: px2rem(28px);
+    span {
+      flex-shrink: 0;
+    }
+    .arrowRight {
+      width: px2rem(13px);
+      height: px2rem(22px);
+      padding: 0 px2rem(24px) 0 px2rem(12px);
+      box-sizing: content-box;
+    }
+    .question {
+      color: #9a9a9a;
+      flex-shrink: 0;
+      font-size: px2rem(28px);
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      svg {
+        width: px2rem(26px);
+        height: px2rem(26px);
+        margin: 0 0 0 px2rem(10px);
+      }
+    }
+  }
+  .total {
+    flex-shrink: 0;
+    height: px2rem(40px);
+    line-height: px2rem(40px);
+    position: relative;
+    padding-right: px2rem(80px);
+    .num {
+      position: absolute;
+    }
+  }
+
+  .collapse {
+    margin: px2rem(10px);
+  }
+  .warning {
+    color: #cc0000;
+  }
+
+  .placeholder {
+    height: px2rem(120px);
+    padding: px2rem(24px);
+    box-sizing: content-box;
+  }
+  .footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: px2rem(24px);
+    background-color: #ffffff;
+    max-width: 750px;
+
+    .button {
+      height: px2rem(80px);
+      background: #1e8aff;
+      border-radius: px2rem(100px);
+      font-size: px2rem(32px);
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+  .look {
+    background: transparent !important;
+    color: #777777 !important;
+    margin-right: px2rem(10px);
+    width: auto;
+    flex-shrink: 0;
+  }
+}

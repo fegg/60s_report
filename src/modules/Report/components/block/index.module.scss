@@ -1,0 +1,26 @@
+
+@import '../../base.scss';
+.block {
+    background-color: #FFFFFF;
+    margin: px2rem(20px) px2rem(-10px);
+    border-radius: px2rem(20px);
+    .label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: px2rem(30px) px2rem(24px);
+        span {
+            height: px2rem(45px);
+            font-size: px2rem(32px);
+            // font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #2A2A2A;
+            line-height: px2rem(45px);
+            display: block;
+        }
+        svg {
+            width: px2rem(40px);
+            height: px2rem(40px);
+        }
+    }
+}
