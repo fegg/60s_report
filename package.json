@@ -5,9 +5,11 @@
   "repository": "git@github.com:yexiaochai/60s_report.git",
   "author": "insane <luojieyy@gmail.com>",
   "license": "MIT",
+  "homepage": "http://yexiaochai.github.io/60s_report",
   "scripts": {
     "vite": "vite",
-    "build": "vite build"
+    "build": "vite build --base=/60s_report/",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@antv/g2": "^4.1.35",
@@ -23,6 +25,7 @@
     "@types/lodash": "^4.14.178",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
     "less": "^4.1.2",
     "sass": "^1.45.0",
     "vite": "2.5.10",
