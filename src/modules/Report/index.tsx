@@ -22,7 +22,7 @@ const Report = () => {
     {
       detpId: "10",
       deptCode: "001-00A",
-      deptName: "部门1",
+      name: "我的部门",
     },
   ];
 
@@ -85,7 +85,6 @@ const Report = () => {
             </span>
           </span>
         </div>
-        <div className={styles["header-placeholder"]}></div>
         <Loading visible={depts.length} loading={true}>
           {!!items.length &&
             +isSubmit === 1 &&
