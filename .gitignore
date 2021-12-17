@@ -58,7 +58,6 @@ jspm_packages/
 .next
 
 dist
-build
 
 node_modules
 demo-minitomato
