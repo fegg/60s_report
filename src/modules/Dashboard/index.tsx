@@ -16,7 +16,7 @@ const DashBoard = () => {
   return (
     <>
       <Card className="dashboard-top-chart">
-        <Line data={transform(data.data.dayData as any)} dept={"001-010"} />
+        <Line data={transform(data.data.dayData as any)} dept={"001-00A"} />
       </Card>
       <div className="dashboard-detail-cards">
         <DeptCard
