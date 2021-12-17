@@ -1,10 +1,12 @@
-name: Build and Deploy
+name: publish pages
 on: 
   push: 
     branches: [ develop ]
     paths:
       - 'src/**'
       - 'index.html'
+      - 'package.json'
+      - 'vite.config.ts'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
