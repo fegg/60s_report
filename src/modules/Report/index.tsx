@@ -65,14 +65,6 @@ const Report = () => {
               className={styles.arrowRight}
               src="https://pub-med-post.medlinker.com/_/prod/developer-panel/1463517605938594832.png"
             />
-
-            <a
-              href="https://alidocs.dingtalk.com/i/team/dN0G7AR0kd777XWY/docs/dN0G783AqvNpazWY"
-              className={styles.question}
-            >
-              填报说明
-              <QuestionCircleOutline />
-            </a>
           </div>
           <span className={styles.total}>
             <span>剩余可用精力：</span>

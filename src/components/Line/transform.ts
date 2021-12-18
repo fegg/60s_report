@@ -10,20 +10,6 @@ export default function (dayData: IDeptTrend['dayData'], id?: string) {
       const percent = (key: keyof typeof cost) => + (100 * (+cost[key] / +cost.total)).toFixed(2);
       list.push(
         {
-          value: +cost.companyProjectCost / 100,
-          dept: dept.deptCode || id!,
-          date: cur.day,
-          type: '公司项目',
-          percent: percent('companyProjectCost')
-        },
-        {
-          value: +cost.deptProjectCost / 100,
-          dept: dept.deptCode || id!,
-          date: cur.day,
-          type: '部门项目',
-          percent: percent('deptProjectCost')
-        },
-        {
           value: +cost.matterCost / 100,
           dept: dept.deptCode || id!,
           date: cur.day,

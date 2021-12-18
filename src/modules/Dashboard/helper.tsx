@@ -114,7 +114,7 @@ export const makeCardData =
   };
 
 const _getTopList = function (list: any[], total: number, all: number) {
-  const limit = 3;
+  const limit = list.length;
   // 统计前3项目的百分比
   let ratio = 0;
   const top = list.slice(0, limit).reduce(function (acc, item) {
