@@ -11,7 +11,7 @@ export const mobileInit = () => {
       wid > 750 && (wid = 750);
       const size = wid / (750 / base);
       // @ts-ignore
-      document.querySelector("html").style.fontSize = `${size}px`;
+      document.querySelector("html").style.fontSize = `${48}px`;
     }
     pxTorem();
     window.addEventListener("resize", function () {

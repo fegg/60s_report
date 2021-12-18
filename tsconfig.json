@@ -9,8 +9,7 @@
       "dom"
     ],
     "types": [
-      "vite/client",
-      "./types/index.d.ts"
+      "vite/client"
     ],
     "esModuleInterop": true,
     "baseUrl": ".",
