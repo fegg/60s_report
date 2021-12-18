@@ -1,0 +1,70 @@
+@import '../base.scss';
+.page {
+  background-color: #f6f7f8;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  max-width: 750px;
+
+  .header {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    font-size: px2rem(32px);
+    // font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #4a4a4a;
+    padding: px2rem(30px) px2rem(24px);
+    background: #f0f1f3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 750px;
+    &-placeholder {
+      height: px2rem(100px);
+    }
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    font-size: px2rem(28px);
+    height: px2rem(28px);
+    line-height: px2rem(28px);
+    color: #777;
+    span {
+      flex-shrink: 0;
+    }
+    .arrowRight {
+      width: px2rem(13px);
+      height: px2rem(22px);
+      padding: 0 px2rem(24px) 0 px2rem(12px);
+      box-sizing: content-box;
+    }
+  }
+
+  .projects {
+    margin: px2rem(24px);
+    .card {
+      margin-bottom: px2rem(20px);
+    }
+    .cardContent {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-weight: bold;
+        font-size: px2rem(32px);
+      }
+      .time {
+        color: #666;
+        font-size: px2rem(28px);
+        white-space: nowrap;
+        margin-left: px2rem(10px);
+      }
+    }
+  }
+}
