@@ -37,7 +37,7 @@ const Home: React.FC<{}> = (props) => {
   return (
     <div className="home-page">
       <Card title="一分钟日报初体验" fill="#f0f2f5"></Card>
-      <div className="simulator-box">
+      <div className="simulator-box" id="report-container">
         <Report />
       </div>
       <div className="dashboard-box">

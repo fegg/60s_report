@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styles from "../styles/report.module.less";
 import { format } from "date-fns";
-import { QuestionCircleOutline } from "antd-mobile-icons";
-import { Button, SafeArea, NoticeBar, Checkbox } from "antd-mobile";
+import { message } from "antd";
+import { Button, SafeArea, NoticeBar, Checkbox, Toast } from "antd-mobile";
 import ProjectOrWork from "./components/index";
 import Loading from "./components/loading";
 import PopCalendar from "./components/calendar";
 import Collapse from "@/components/collapse";
+
 import "./index.scss";
 
 const Report = () => {
@@ -26,7 +27,12 @@ const Report = () => {
     },
   ];
 
-  function onSubmit() {}
+  function onSubmit() {
+    Toast.show({
+      content: "提交成功",
+      getContainer: () => document.getElementById("report-container")!
+    });
+  }
 
   const getItem = React.useCallback(
     (dept: any) => {

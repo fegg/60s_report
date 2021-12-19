@@ -12,7 +12,9 @@ const lossRatio = (
 ).toFixed(1);
 
 const DashBoard = () => {
-  const DeptCard = makeCardData(works.data as any, () => {});
+  const list = works.data.matterInfo.list;
+  const total:number = list.reduce((pre, cur) => pre + (+cur.cost), 0);
+
   return (
     <>
       <Card className="dashboard-top-chart">
@@ -21,7 +23,7 @@ const DashBoard = () => {
       <div className="dashboard-detail-cards">
         {
           works.data.matterInfo.list.map((item, index) => {
-            return <CardProgress title={item.title} progress={+item.cost/500} key={index} />
+            return <CardProgress title={item.title} progress={100*+item.cost/total} key={index} />
           })
         }
         <CardProgress title="日常损耗" progress={lossRatio} />
