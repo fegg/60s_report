@@ -37,6 +37,9 @@ function Work(props: any) {
       </span>
 
       <Popup
+        getContainer={
+          () => document.getElementById("simulator-popup")!
+        }
         visible={panelVisible}
         onMaskClick={() => {
           setPanelVisible(false);

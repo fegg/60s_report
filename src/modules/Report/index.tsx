@@ -153,6 +153,7 @@ const Report = () => {
           <SafeArea position="bottom" />
         </div>
       </Loading>
+      <div id="simulator-popup"></div>
     </div>
   );
 };

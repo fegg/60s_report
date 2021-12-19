@@ -1,5 +1,7 @@
 import React from "react";
+import api from "./api";
 
+const [works, worksMap] = api;
 
 type ContextType = {
   recentOptions: { [key: string]: string },
@@ -30,18 +32,18 @@ interface WorkMapType {
 }
 
 export const CardContext = React.createContext<{
-  works: WorkType[],
+  works?: WorkType[],
   projects: WorkMapType[],
-  worksMap: WorkMapType[],
+  worksMap?: WorkMapType[],
   projectsMap: Record<string, string>,
   getProjects: () => void,
   searchParams: {
     projectName: string
   }
 }>({
-  works: [],
+  works,
   projects: [],
-  worksMap: {},
+  worksMap,
   projectsMap: {},
   getProjects: () => { },
   searchParams: {
