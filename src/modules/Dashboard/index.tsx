@@ -15,7 +15,7 @@ const DashBoard = () => {
   const list = works.data.matterInfo.list;
   const total:number = list.reduce((pre, cur) => pre + (+cur.cost), 0);
   const today = new Date();
-  const start = startOfWeek(today);
+  const start = startOfWeek(today, { weekStartsOn: 1});
   const dept ="001-00A";
 
   const rand = () => Array(list.length).fill(1).map(()=> Math.random() * 100);
