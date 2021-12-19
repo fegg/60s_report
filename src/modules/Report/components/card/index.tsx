@@ -7,7 +7,6 @@ import styles from "./components/index.module.scss";
 import { CardContext } from "./components/context";
 import api from "./components/api";
 
-const [works, worksMap] = api;
 /**
  *
  * @param props 卡片组件
@@ -19,10 +18,11 @@ function Card(props: any) {
     otherData: any = [],
     projects: any = [],
     projectsMap: any = {},
-    works: any = [],
-    worksMap: any = {},
     getProjects: any = () => {},
     searchParams: any = {};
+
+  // 初始化一次事项弹窗
+  const [works, worksMap] = api;
 
   if (type === 'item') {
     item[`${type}s`].forEach((item: any) => {
@@ -32,14 +32,6 @@ function Card(props: any) {
         otherData.push(item);
       }
     });
-
-    // 初始化一次事项弹窗
-    const [data] = React.useState( {
-      works,
-      worksMap
-    });
-    works = data.works;
-    worksMap = data.worksMap;
   }
 
   return (

@@ -32,9 +32,9 @@ interface WorkMapType {
 }
 
 export const CardContext = React.createContext<{
-  works?: WorkType[],
+  works: WorkType[],
   projects: WorkMapType[],
-  worksMap?: WorkMapType[],
+  worksMap: WorkMapType[],
   projectsMap: Record<string, string>,
   getProjects: () => void,
   searchParams: {
