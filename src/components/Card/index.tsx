@@ -62,7 +62,7 @@ export const CardProgress: React.FC<CardProgressProps & CardProps> = function ({
                 }}
               />
             </div>
-            <span>{`${percent}%`}</span>
+            <span className="card-title-progress-num">{`${percent}%`}</span>
           </div>
         )
       }

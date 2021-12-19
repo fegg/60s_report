@@ -19,12 +19,11 @@ const DashBoard = () => {
         <Line data={transform(data.data.dayData as any)} dept={"001-00A"} />
       </Card>
       <div className="dashboard-detail-cards">
-        <DeptCard
-          {...{
-            title: "日常事项",
-            factor: "matter",
-          }}
-        />
+        {
+          works.data.matterInfo.list.map((item, index) => {
+            return <CardProgress title={item.title} progress={+item.cost/500} key={index} />
+          })
+        }
         <CardProgress title="日常损耗" progress={lossRatio} />
       </div>
     </>
